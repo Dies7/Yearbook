@@ -21,7 +21,6 @@ html {
 .banner-txt {
   position: absolute;
   top:5px;
-
 }
 
 body {
@@ -48,7 +47,9 @@ body > header {
 
 #banner {
   color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  background: linear-gradient(#ffd3d3,#ff0000) no-repeat center;
+  text-shadow: 1px 1px #ffffff;
   top: 0px;
   height: 50px;
 }
