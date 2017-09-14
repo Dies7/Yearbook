@@ -54,6 +54,26 @@ body > header {
   height: 50px;
 }
 
+#body-container {
+  position:absolute;
+  top: 125px;
+}
+
+#advertisements {
+
+}
+
+.sponsor-image {
+  border-color: black;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 50%;
+}
+
+.sponsor-image:hover {
+  border-style: solid;
+}
+
 a {
   color: #ffffff;
   padding-left: 20px;
@@ -67,4 +87,12 @@ a:hover {
   color: #ff0000;
   text-shadow: 2px 2px #baa7a7;
   background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1080px) {
+
+#advertisements {
+  display:none;
+}
+
 }
