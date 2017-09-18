@@ -62,6 +62,7 @@ body > header {
 
 #buy-button {
   position:absolute;
+  border:2px solid #000000;
   left:35%;
   right:35%;
   width:30%;
@@ -73,9 +74,20 @@ body > header {
 }
 
 #countingdown {
+  border:2px solid #000000;
+  background-color: #ff8989;
+  color: #000000;
   font-size: 30px;
-  margin-left:37%;
-  margin-right: 37%;
+  margin-left:35%;
+  margin-right: 35%;
+}
+
+#yearbook-ad {
+  border:1px solid #ff0000;
+  width: 50%;
+  height: 35%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #body-content > p {
@@ -150,8 +162,12 @@ a:hover {
   display:none;
 }
 
+#navbar {
+  display: none;
+}
+
 #body-content {
-  top: 110px;
+  top: 80px;
   left:0%;
   right:0%;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
