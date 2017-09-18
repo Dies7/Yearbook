@@ -6,34 +6,34 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
   </head>
   <body>
+    <div class="backgr">
+
+    </div>
     <header id="banner">
         <h1 align="center"><b>West High Yearbook</b></h1>
     </header>
     <header id="navbar">
       <a href="index.html">Home</a>
       <a href="sponsors.html">Sponsors</a>
-      <a href="https://yearbookforever.com/#school/4022/2018">Buy It!</a>
+      <a href="https://yearbookforever.com/#school/4022/2018" target="_blank">Buy It!</a>
     </header>
     <div id="body-content">
       <br>
       <iframe id="yearbook-ad" width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI"></iframe>
       <h1 id="countingdown">Loading Countdown...</h1>
-      <a href="https://yearbookforever.com/#school/4022/2018">
+      <a href="https://yearbookforever.com/#school/4022/2018" target="_blank">
         <img id="buy-button" src="buyBut.png" alt="">
       </a>
     </div>
     <div id="advertisements" class="ad-left">
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:100%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:180%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:260%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.powergrafxinc.net/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:100%; left:9%;" src="images/grafx.jpg" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://grindersspaghettihouse.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:180%; left:9%;" src="images/grinders.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.devotedimagery.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:260%; left:9%;" src="" alt="Click Here to Visit Advertisers!"></a>
     </div>
     <div id="advertisements" class="ad-right">
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:100%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:180%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
-      <a href="#"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:260%; left:9%;" src="https://3mxwfc45nzaf2hj9w92hd04y-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/inside-page-style-blank-3.jpg" alt="Click Here to Visit Advertisers!"></a>
-    </div>
-    <div class="backgr">
-
+      <a href="http://www.photofrog.net/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:100%; left:9%;" src="images/photo-frog.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.ganzos.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:180%; left:9%;" src="images/ganzos.png" alt="Click Here to Visit Advertisers!"></a>
+      <a href="http://www.petersenplumbing.com/" target="_blank"><img class="sponsor-image" style="position:absolute;width:70%; margin-top:260%; left:9%;" src="images/petersen.png" alt="Click Here to Visit Advertisers!"></a>
     </div>
   </body>
 </html>
@@ -66,4 +66,32 @@ var x = setInterval(function() {
     document.getElementById("countingdown").innerHTML = "Offer Expired";
   }
 }, 1000);
+</script>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
