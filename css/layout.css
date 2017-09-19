@@ -162,6 +162,10 @@ a:hover {
   display:none;
 }
 
+.backgr {
+  display: none;
+}
+
 #navbar {
   display: none;
 }
