@@ -73,13 +73,24 @@ body > header {
   filter: brightness(1.25);
 }
 
+#counting-tag {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
 #countingdown {
   border:2px solid #000000;
   background-color: #ff8989;
   color: #000000;
   font-size: 30px;
-  margin-left:35%;
-  margin-right: 35%;
+}
+
+#countingdown-text {
+  border:2px solid #000000;
+  background-color: #ff8989;
+  color: #000000;
+  margin-top: 0px;
+  font-size: 15px;
 }
 
 #yearbook-ad {
